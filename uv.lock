@@ -2,6 +2,12 @@ version = 1
 revision = 2
 requires-python = ">=3.11"
 
+[manifest]
+members = [
+    "agents",
+    "personal-agent",
+]
+
 [[package]]
 name = "agents"
 version = "0.1.0"
@@ -310,6 +316,11 @@ sdist = { url = "https://files.pythonhosted.org/packages/53/a3/301c6302bd2142c44
 wheels = [
     { url = "https://files.pythonhosted.org/packages/20/69/899b33c97d5ee6ce454d5cdf89ddddcec9100bece4ed508229b06b1a07ca/openai_agents-0.0.19-py3-none-any.whl", hash = "sha256:daff03408e3a069e2a04fdf3968296cdc5f63ab635df1d8a54ca2e9352e68516", size = 126694, upload_time = "2025-06-18T00:49:13.906Z" },
 ]
+
+[[package]]
+name = "personal-agent"
+version = "0.1.0"
+source = { virtual = "personal_agent" }
 
 [[package]]
 name = "pydantic"

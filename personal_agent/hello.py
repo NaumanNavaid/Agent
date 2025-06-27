@@ -1,8 +1,10 @@
 from decouple import config
 from openai import AsyncOpenAI
-from agents import OpenAIChatCompletionsModel, Agent, Runner
+from agents import OpenAIChatCompletionsModel, Agent, Runner , enable_verbose_stdout_logging
+
 import asyncio
 
+enable_verbose_stdout_logging()
 my_key = config("GEMINI_API_KEY")
 
 client = AsyncOpenAI(api_key=my_key,

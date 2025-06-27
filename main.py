@@ -1,8 +1,8 @@
 from employee_agents.accountant import accountant
-from agents import Runner
+from agents import Runner , enable_verbose_stdout_logging
 import asyncio
 
-
+enable_verbose_stdout_logging()
 
 async def main():
     

@@ -8,3 +8,8 @@ dependencies = [
     "openai-agents>=0.0.19",
     "python-decouple",
 ]
+
+[tool.uv.workspace]
+members = [
+    "personal_agent",
+]
